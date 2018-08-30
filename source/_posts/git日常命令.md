@@ -23,7 +23,7 @@ password:
 
 ### git使用说明
 > 场景：新增功能，使用新的分支开发
-```
+```code
 1. 在github或码云中，新建分支，输入新分支名称,如： index-swiper
 2. 打开项目，cd至项目文件根目录
     git pull：拉分支代码至本地
@@ -40,17 +40,30 @@ password:
     git merge origin/index-swiper
 8. 将本地master的代码提交至远程master
     git push
-    
-9. 删除远程分支
-    git push origin :BranchName
-    git push origin -D BranchName
-10. 删除本地分支
-    git branch -D BranchName
-11. 显示git的修改日志
+9. 显示git的修改日志
     git log --pretty=oneline
 ```
 
-### git的几种[撤销](https://blog.csdn.net/kongbaidepao/article/details/52253774)
+### 删除git远程文件或者文件夹
+```code
+// 是否下载指定的分支，否则则是默认的master分支，如果没有设置setting的default分支
+git clone git@github.com:RogueSword/RogueSword.github.io.git
+git clone -b next git@github.com:RogueSword/RogueSword.github.io.git
+
+git rm theme/test.txt     // 删除一级目录下的test文件的操作
+git rm -r theme              // 删除一级目录下的theme文件夹
+```
+
+### 删除本地及远程分支
+```code
+1. 删除远程分支
+    git push origin :BranchName
+    git push origin -D BranchName
+2. 删除本地分支
+    git branch -D BranchName
+```
+
+### git的几种[撤销](https://blog.csdn.net/kongbaidepao/article/details/52253774)+[git push撤销](https://blog.csdn.net/hanchao5272/article/details/79435730)
 ```
 1. git add 的撤销
     git status 先看一下add 中的文件 
@@ -62,7 +75,18 @@ password:
 3. git push的撤销
     git revert HEAD
     git revert HEAD 撤销前一次 commit 
-    git revert HEAD^ 撤销前前一次 commit 
+    git revert HEAD^ 撤销前前一次 commit
+
+    // 方法2
+    git log    // 查看提交信息，以便找到会退的版本号码
+    git reset --soft 版本号  // 保留当前工作区，以便重新提交
+              --hard 版本号  // 撤销相应工作区的修改
+    git log    // 查看当前的提交信息，确认是否已经回退
+    git push origin master –force   // 强制提交当前版本号，以达到撤销版本号的目的。必须添加参数force进行强制提交，否则会提交失败
+    // 接着常规操作
+    git add .
+    git commit -m 'xxx'
+    git push origin xxx
 ```
 
 ### git pull详细示例
@@ -121,6 +145,15 @@ git merge origin/master             // 将fetch放在存储库里的内容与本
 ```
 1. git branch -r    // 查看当前远程分支
 2. git branch -a    // 查看所有分支，远程及本地
+```
+
+### 创建.gitignore文件，忽略git不必要提交文件
+```code
+touch .gitignore    // 创建.gitignore文件
+// 在文件录入：
+.deploy_git/
+node_modules/
+public/
 ```
 
 > 参考：
