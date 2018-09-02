@@ -52,7 +52,7 @@ obj.greet(a);
 
 > 注意：在写法2和3中，我们可以看到，两者导出的均为一个对象。实际上在node中，module.exports和exports是同一个变量，并且初始化为一个空对象{}。在这个空对象中，可以存放键值对形式的方法。**但是如果要导出的是数组或者函数，则必须使用module.exports**，实际上，记住一点即可，使用module.exports总是不会错的！
 
-- 其他：对于引用node的一些内置模块的时候，可以直接引用
+- 其他：对于引用node的一些内置模块时，可以直接引用其模块名称
 ```js
 const http = require('http');
 http.createServer((request, response) => {

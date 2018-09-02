@@ -114,7 +114,7 @@
 <meta property="og:site_name" content="RogueSword">
 <meta property="og:description" content="随js语言持续优化，为我们的开发带来较大的便利性。但是在使用node和es6的模块化功能时候，两者的使用方式还是有点区别。在这里做一小结，以便日后查阅  基本的使用规范CommonJS 主要是Node.js的使用规范， 每一个js都是一个独立的模块，并且里面的变量名称互不冲突。使用规则为一个模块向外导出变量，另一个模块导入变量 语法 导出的模块：module.exports = ‘变量名">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-31T08:57:17.808Z">
+<meta property="og:updated_time" content="2018-09-02T13:15:25.795Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="commonJS和ES6模块化">
 <meta name="twitter:description" content="随js语言持续优化，为我们的开发带来较大的便利性。但是在使用node和es6的模块化功能时候，两者的使用方式还是有点区别。在这里做一小结，以便日后查阅  基本的使用规范CommonJS 主要是Node.js的使用规范， 每一个js都是一个独立的模块，并且里面的变量名称互不冲突。使用规则为一个模块向外导出变量，另一个模块导入变量 语法 导出的模块：module.exports = ‘变量名">
@@ -428,7 +428,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  
+                  1,289
                 </span>
               
 
@@ -444,7 +444,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  分钟
+                  5分钟
                 </span>
               
             </div>
@@ -483,7 +483,7 @@
 <p>注意：在写法2和3中，我们可以看到，两者导出的均为一个对象。实际上在node中，module.exports和exports是同一个变量，并且初始化为一个空对象{}。在这个空对象中，可以存放键值对形式的方法。<strong>但是如果要导出的是数组或者函数，则必须使用module.exports</strong>，实际上，记住一点即可，使用module.exports总是不会错的！</p>
 </blockquote>
 <ul>
-<li>其他：对于引用node的一些内置模块的时候，可以直接引用<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line">http.createServer(<span class="function">(<span class="params">request, response</span>) =&gt;</span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;).listen(<span class="string">'8080'</span>)</span><br></pre></td></tr></table></figure>
+<li>其他：对于引用node的一些内置模块时，可以直接引用其模块名称<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line">http.createServer(<span class="function">(<span class="params">request, response</span>) =&gt;</span> &#123;</span><br><span class="line"></span><br><span class="line">&#125;).listen(<span class="string">'8080'</span>)</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="ES6模块化"><a href="#ES6模块化" class="headerlink" title="ES6模块化"></a>ES6模块化</h3><ul>
@@ -557,7 +557,7 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
   <p><span>文章作者:</span><a href="/" title="访问 Roy 的个人博客">Roy</a></p>
-  <p><span>最后更新:</span>2018年08月31日 16:08:17</p>
+  <p><span>最后更新:</span>2018年09月02日 21:09:25</p>
   <p><span>原始链接:</span><a href="/2018/08/30/commonJS和ES6模块化/" title="commonJS和ES6模块化">http://yoursite.com/2018/08/30/commonJS和ES6模块化/</a></p>
   <p><span>版权声明:</span>本博客所有文章除特别声明外，均采用 <i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank" title="Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0)"> BY-NC-SA 3.0 许可协议</a>，转载请注明出处！</p>  
 </div>
@@ -818,7 +818,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count"></span>
+    <span title="Site words total count">3.5k</span>
   
 </div>
 
@@ -831,7 +831,7 @@
   </div>
   <div class="theme-info">
     <div class="powered-by"></div>
-    <span class="post-count">博客全站共字</span>
+    <span class="post-count">博客全站共3.5k字</span>
   </div>
 </div>
 
@@ -1034,7 +1034,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
