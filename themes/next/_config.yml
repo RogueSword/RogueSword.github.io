@@ -156,8 +156,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: http://p8sur5u78.bkt.clouddn.com/avatar.jpeg
-
+avatar: https://avatars1.githubusercontent.com/u/32269?v=3&s=460
 # Table Of Contents in the Sidebar
 toc:
   enable: true
