@@ -27,10 +27,10 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: http://p8sur5u78.bkt.clouddn.com/favicon16.ico
-  medium: http://p8sur5u78.bkt.clouddn.com/favicon32.ico
-  apple_touch_icon: http://p8sur5u78.bkt.clouddn.com/favicon48.ico
-  safari_pinned_tab: http://p8sur5u78.bkt.clouddn.com/favicon64.ico
+  small: https://p8sur5u78.bkt.clouddn.com/favicon16.ico
+  medium: https://p8sur5u78.bkt.clouddn.com/favicon32.ico
+  apple_touch_icon: https://p8sur5u78.bkt.clouddn.com/favicon48.ico
+  safari_pinned_tab: https://p8sur5u78.bkt.clouddn.com/favicon64.ico
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -156,10 +156,10 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: https://avatars1.githubusercontent.com/u/32269?v=3&s=460
+avatar: https://raw.githubusercontent.com/RogueSword/Imgs_backup/master/res/20190910152447.png
 # Table Of Contents in the Sidebar
 toc:
-  enable: true
+  enable: truehttp://p8sur5u78.bkt.clouddn.com/gulangyu1.JPG
 
   # Automatically add list number to toc.
   number: true
@@ -245,8 +245,8 @@ post_wordcount:
 
 # Reward
 reward_comment: 如果这篇文章帮到您，来根冰棍儿呗！
-wechatpay: http://p8sur5u78.bkt.clouddn.com/WeChanSQ.png
-alipay: http://p8sur5u78.bkt.clouddn.com/AliPayQR.png
+wechatpay: https://raw.githubusercontent.com/RogueSword/Imgs_backup/master/res/20190910165525.png
+alipay: https://raw.githubusercontent.com/RogueSword/Imgs_backup/master/res/20190910165327.png
 bitcoin: http://p8sur5u78.bkt.clouddn.com/BTCQR.png
 
 # Declare license on posts
