@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-02T13:15:25.795Z</updated>
+  <updated>2019-09-19T06:33:35.659Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019面试资料整理</title>
+    <link href="http://yoursite.com/2019/09/19/2019%E9%9D%A2%E8%AF%95%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/"/>
+    <id>http://yoursite.com/2019/09/19/2019面试资料整理/</id>
+    <published>2019-09-19T06:31:50.000Z</published>
+    <updated>2019-09-19T06:33:35.659Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="综合"><a href="#综合" class="headerlink" title="综合"></a>综合</h3><ul><li><a href="https://mp.weixin.qq.com/s/TpoKxF4gMi4pSML--W0X2g" target="_blank" rel="noopener">五分钟面试</a></li><li><a href="https://mp.weixin.qq.com/s/PDMt08JJCzJtHC9bRBPg4w" target="_blank" rel="noopener">学习路线以及方向的总结</a></li></ul><h3 id="js"><a href="#js" class="headerlink" title="js"></a>js</h3><ul><li><a href="https://segmentfault.com/a/1190000008594792" target="_blank" rel="noopener">关于隐式转换</a></li><li><a href="https://github.com/gauseen/blog/issues/6" target="_blank" rel="noopener">宏任务与微任务</a></li></ul><h3 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h3><ul><li><a href="https://blog.csdn.net/mqingo/article/details/86031260" target="_blank" rel="noopener">vue生命周期</a></li><li><a href="https://blog.csdn.net/sinat_17775997/article/details/82756496" target="_blank" rel="noopener">Vue 面试中常问知识点整理</a></li><li><a href="https://juejin.im/post/5d41eec26fb9a06ae439d29f?" target="_blank" rel="noopener">面试必备的13道可以举一反三的Vue面试题</a></li><li><a href="https://mp.weixin.qq.com/s/w4onfmE5FWc2zqP6mtYc3g" target="_blank" rel="noopener">「从源码中学习」面试官都不知道的Vue题目答案</a></li><li><a href="https://juejin.im/post/5d59f2a451882549be53b170?utm_source=gold_browser_extension#heading-2" target="_blank" rel="noopener">30 道 Vue 面试题，内含详细讲解（涵盖入门到精通，自测 Vue 掌握程度）</a></li><li><a href="https://mp.weixin.qq.com/s/cVYtYWOB2mie-bjZmSw9AQ" target="_blank" rel="noopener">Vue.js最佳实践（五招让你成为Vue.js大师</a></li><li><a href="https://www.jianshu.com/p/ce8ca875c337" target="_blank" rel="noopener">vm.$attrs 【Vue 2.4.0新增inheritAttrs，attrs详解】</a></li><li><a href="https://juejin.im/post/5ad6182df265da23906c8627" target="_blank" rel="noopener">面试官：你了解 vue 的diff算法吗？</a></li><li><a href="https://juejin.im/post/5d48f3b7e51d4561e224a2c8?utm_source=gold_browser_extension" target="_blank" rel="noopener">Vuejs建议和最佳实践</a></li></ul><h3 id="webpack-配置"><a href="#webpack-配置" class="headerlink" title="webpack 配置"></a>webpack 配置</h3><ul><li><a href="https://www.jianshu.com/p/bfc7e7329cff" target="_blank" rel="noopener">eslint 配置</a></li><li><a href="https://www.cnblogs.com/giggle/p/9583940.html" target="_blank" rel="noopener">webpack中对于输出文件名可以有三种hash值</a></li></ul><h3 id="http"><a href="#http" class="headerlink" title="http"></a>http</h3><ul><li><a href="https://www.cnblogs.com/sunny-sl/p/6529830.html" target="_blank" rel="noopener">HTTP协议【详解】——经典面试题</a></li></ul><h3 id="针对同样的路由，携带了动态参数，-path-a-path-b，解决不刷新的问题"><a href="#针对同样的路由，携带了动态参数，-path-a-path-b，解决不刷新的问题" class="headerlink" title="针对同样的路由，携带了动态参数， /path/a   /path/b，解决不刷新的问题"></a>针对同样的路由，携带了动态参数， /path/a   /path/b，解决不刷新的问题</h3><ul><li>watch中观察$route, handler为请求的方法名，immediate 设置为 true</li><li>beforeRouteUpdate 路由守卫解决</li><li>在 router-view里面新增<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-view :key=&quot;$route.fullpath&quot;&gt;&lt;/router-view&gt;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;综合&quot;&gt;&lt;a href=&quot;#综合&quot; class=&quot;headerlink&quot; title=&quot;综合&quot;&gt;&lt;/a&gt;综合&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/TpoKxF4gMi4pSML--W0X2g&quot; targ
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>commonJS和ES6模块化</title>
