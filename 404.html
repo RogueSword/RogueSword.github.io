@@ -1027,6 +1027,10 @@
             color: rgb(253, 99, 125);
             font-weight: bold;
         }
+        #words{
+            position: absolute;
+            bottom: 0;
+        }
     </style>
 </head>
 <body id="body">
@@ -1643,7 +1647,7 @@
             '大叔和思思相识于2020年5月1日',
             '缘分让我们相遇，时光当倍加珍惜',
             '2020年5月16日，大叔鼓足勇气向猪猪女孩儿表白了~',
-            '2020年5月17日 8：50 am，小猪猪正式成为了大叔的女朋友!',
+            '2020年5月17日 8：50，小猪猪正式成为了大叔的女朋友!',
             '玲珑骰子安红豆，入骨相思知不知',
             '入我相思门，知我相思苦',
             '只愿君心似我心，定不负相思意',
@@ -1671,9 +1675,22 @@
             count++;
             const wordIndex = getRandomNum(memoryWords.length);
             words.setAttribute('direction', Math.random() > 0.5 ? 'left' : 'right');
-            words.innerHTML = memoryWords[wordIndex];
-            if (count > 20) {
+            if (count > 24) {
+                return;
+            } else if (count > 23) {
+                alert('思思猪，大叔永远爱你！')
+                alert('思思猪，大叔永远爱你！')
+                alert('思思猪，大叔永远爱你！')
+
                 words.innerHTML = "择一城终老，携一人白首  -大叔love思思"
+            } else if (count > 22) {
+                alert('好吧-好吧-')
+            } else if (count > 21) {
+                alert('就知道你会点？')
+            } else if (count > 20) {
+                alert('好奇宝宝，想看所有的对不对？')
+            } else {
+                words.innerHTML = memoryWords[wordIndex ];
             }
         }
 
