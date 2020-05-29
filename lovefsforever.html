@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>大叔的思思吖( ´•ω•)ﾉ(._.`)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        :root {
+            --animate-duration: 1s;
+            --animate-delay: 1s;
+            --animate-repeat: 1
+        }
+
+        .animate__animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-duration: var(--animate-duration);
+            animation-duration: var(--animate-duration);
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+
+        .animate__animated.animate__infinite {
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite
+        }
+
+        .animate__animated.animate__repeat-1 {
+            -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+            -webkit-animation-iteration-count: var(--animate-repeat);
+            animation-iteration-count: var(--animate-repeat)
+        }
+
+        .animate__animated.animate__repeat-2 {
+            -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+            -webkit-animation-iteration-count: calc(var(--animate-repeat)*2);
+            animation-iteration-count: calc(var(--animate-repeat)*2)
+        }
+
+        .animate__animated.animate__repeat-3 {
+            -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
+            -webkit-animation-iteration-count: calc(var(--animate-repeat)*3);
+            animation-iteration-count: calc(var(--animate-repeat)*3)
+        }
+
+        .animate__animated.animate__delay-1s {
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+            -webkit-animation-delay: var(--animate-delay);
+            animation-delay: var(--animate-delay)
+        }
+
+        .animate__animated.animate__delay-2s {
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+            -webkit-animation-delay: calc(var(--animate-delay)*2);
+            animation-delay: calc(var(--animate-delay)*2)
+        }
+
+        .animate__animated.animate__delay-3s {
+            -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+            -webkit-animation-delay: calc(var(--animate-delay)*3);
+            animation-delay: calc(var(--animate-delay)*3)
+        }
+
+        .animate__animated.animate__delay-4s {
+            -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+            -webkit-animation-delay: calc(var(--animate-delay)*4);
+            animation-delay: calc(var(--animate-delay)*4)
+        }
+
+        .animate__animated.animate__delay-5s {
+            -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+            -webkit-animation-delay: calc(var(--animate-delay)*5);
+            animation-delay: calc(var(--animate-delay)*5)
+        }
+
+        .animate__animated.animate__faster {
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+            -webkit-animation-duration: calc(var(--animate-duration)/2);
+            animation-duration: calc(var(--animate-duration)/2)
+        }
+
+        .animate__animated.animate__fast {
+            -webkit-animation-duration: .8s;
+            animation-duration: .8s;
+            -webkit-animation-duration: calc(var(--animate-duration)*0.8);
+            animation-duration: calc(var(--animate-duration)*0.8)
+        }
+
+        .animate__animated.animate__slow {
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-duration: calc(var(--animate-duration)*2);
+            animation-duration: calc(var(--animate-duration)*2)
+        }
+
+        .animate__animated.animate__slower {
+            -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+            -webkit-animation-duration: calc(var(--animate-duration)*3);
+            animation-duration: calc(var(--animate-duration)*3)
+        }
+
+        @media (prefers-reduced-motion:reduce),
+        print {
+            .animate__animated {
+                -webkit-animation-duration: 1ms !important;
+                animation-duration: 1ms !important;
+                -webkit-transition-duration: 1ms !important;
+                transition-duration: 1ms !important;
+                -webkit-animation-iteration-count: 1 !important;
+                animation-iteration-count: 1 !important
+            }
+
+            .animate__animated[class*=Out] {
+                opacity: 0
+            }
+        }
+
+        @-webkit-keyframes bounce {
+
+            0%,
+            20%,
+            53%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            40%,
+            43% {
+                -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+                transform: translate3d(0, -30px, 0) scaleY(1.1)
+            }
+
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+                transform: translate3d(0, -15px, 0) scaleY(1.05)
+            }
+
+            80% {
+                -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+                -webkit-transform: translateZ(0) scaleY(.95);
+                transform: translateZ(0) scaleY(.95)
+            }
+
+            90% {
+                -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+                transform: translate3d(0, -4px, 0) scaleY(1.02)
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            53%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            40%,
+            43% {
+                -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+                transform: translate3d(0, -30px, 0) scaleY(1.1)
+            }
+
+            70% {
+                -webkit-animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+                -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+                transform: translate3d(0, -15px, 0) scaleY(1.05)
+            }
+
+            80% {
+                -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+                transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+                -webkit-transform: translateZ(0) scaleY(.95);
+                transform: translateZ(0) scaleY(.95)
+            }
+
+            90% {
+                -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+                transform: translate3d(0, -4px, 0) scaleY(1.02)
+            }
+        }
+
+        .animate__bounce {
+            -webkit-animation-name: bounce;
+            animation-name: bounce;
+            -webkit-transform-origin: center bottom;
+            transform-origin: center bottom
+        }
+
+        @-webkit-keyframes flash {
+
+            0%,
+            50%,
+            to {
+                opacity: 1
+            }
+
+            25%,
+            75% {
+                opacity: 0
+            }
+        }
+
+        @keyframes flash {
+
+            0%,
+            50%,
+            to {
+                opacity: 1
+            }
+
+            25%,
+            75% {
+                opacity: 0
+            }
+        }
+
+        .animate__flash {
+            -webkit-animation-name: flash;
+            animation-name: flash
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05)
+            }
+
+            to {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.05, 1.05, 1.05);
+                transform: scale3d(1.05, 1.05, 1.05)
+            }
+
+            to {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+        }
+
+        .animate__pulse {
+            -webkit-animation-name: pulse;
+            animation-name: pulse;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out
+        }
+
+        @-webkit-keyframes rubberBand {
+            0% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+
+            30% {
+                -webkit-transform: scale3d(1.25, .75, 1);
+                transform: scale3d(1.25, .75, 1)
+            }
+
+            40% {
+                -webkit-transform: scale3d(.75, 1.25, 1);
+                transform: scale3d(.75, 1.25, 1)
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.15, .85, 1);
+                transform: scale3d(1.15, .85, 1)
+            }
+
+            65% {
+                -webkit-transform: scale3d(.95, 1.05, 1);
+                transform: scale3d(.95, 1.05, 1)
+            }
+
+            75% {
+                -webkit-transform: scale3d(1.05, .95, 1);
+                transform: scale3d(1.05, .95, 1)
+            }
+
+            to {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+        }
+
+        @keyframes rubberBand {
+            0% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+
+            30% {
+                -webkit-transform: scale3d(1.25, .75, 1);
+                transform: scale3d(1.25, .75, 1)
+            }
+
+            40% {
+                -webkit-transform: scale3d(.75, 1.25, 1);
+                transform: scale3d(.75, 1.25, 1)
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.15, .85, 1);
+                transform: scale3d(1.15, .85, 1)
+            }
+
+            65% {
+                -webkit-transform: scale3d(.95, 1.05, 1);
+                transform: scale3d(.95, 1.05, 1)
+            }
+
+            75% {
+                -webkit-transform: scale3d(1.05, .95, 1);
+                transform: scale3d(1.05, .95, 1)
+            }
+
+            to {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+        }
+
+        .animate__rubberBand {
+            -webkit-animation-name: rubberBand;
+            animation-name: rubberBand
+        }
+
+        @-webkit-keyframes shakeX {
+
+            0%,
+            to {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: translate3d(-10px, 0, 0);
+                transform: translate3d(-10px, 0, 0)
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                -webkit-transform: translate3d(10px, 0, 0);
+                transform: translate3d(10px, 0, 0)
+            }
+        }
+
+        @keyframes shakeX {
+
+            0%,
+            to {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: translate3d(-10px, 0, 0);
+                transform: translate3d(-10px, 0, 0)
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                -webkit-transform: translate3d(10px, 0, 0);
+                transform: translate3d(10px, 0, 0)
+            }
+        }
+
+        .animate__shakeX {
+            -webkit-animation-name: shakeX;
+            animation-name: shakeX
+        }
+
+        @-webkit-keyframes shakeY {
+
+            0%,
+            to {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: translate3d(0, -10px, 0);
+                transform: translate3d(0, -10px, 0)
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                -webkit-transform: translate3d(0, 10px, 0);
+                transform: translate3d(0, 10px, 0)
+            }
+        }
+
+        @keyframes shakeY {
+
+            0%,
+            to {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: translate3d(0, -10px, 0);
+                transform: translate3d(0, -10px, 0)
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                -webkit-transform: translate3d(0, 10px, 0);
+                transform: translate3d(0, 10px, 0)
+            }
+        }
+
+        .animate__shakeY {
+            -webkit-animation-name: shakeY;
+            animation-name: shakeY
+        }
+
+        @-webkit-keyframes headShake {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+
+            6.5% {
+                -webkit-transform: translateX(-6px) rotateY(-9deg);
+                transform: translateX(-6px) rotateY(-9deg)
+            }
+
+            18.5% {
+                -webkit-transform: translateX(5px) rotateY(7deg);
+                transform: translateX(5px) rotateY(7deg)
+            }
+
+            31.5% {
+                -webkit-transform: translateX(-3px) rotateY(-5deg);
+                transform: translateX(-3px) rotateY(-5deg)
+            }
+
+            43.5% {
+                -webkit-transform: translateX(2px) rotateY(3deg);
+                transform: translateX(2px) rotateY(3deg)
+            }
+
+            50% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+        }
+
+        @keyframes headShake {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+
+            6.5% {
+                -webkit-transform: translateX(-6px) rotateY(-9deg);
+                transform: translateX(-6px) rotateY(-9deg)
+            }
+
+            18.5% {
+                -webkit-transform: translateX(5px) rotateY(7deg);
+                transform: translateX(5px) rotateY(7deg)
+            }
+
+            31.5% {
+                -webkit-transform: translateX(-3px) rotateY(-5deg);
+                transform: translateX(-3px) rotateY(-5deg)
+            }
+
+            43.5% {
+                -webkit-transform: translateX(2px) rotateY(3deg);
+                transform: translateX(2px) rotateY(3deg)
+            }
+
+            50% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0)
+            }
+        }
+
+        .animate__headShake {
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-name: headShake;
+            animation-name: headShake
+        }
+
+        @-webkit-keyframes swing {
+            20% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg)
+            }
+
+            40% {
+                -webkit-transform: rotate(-10deg);
+                transform: rotate(-10deg)
+            }
+
+            60% {
+                -webkit-transform: rotate(5deg);
+                transform: rotate(5deg)
+            }
+
+            80% {
+                -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg)
+            }
+
+            to {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+        }
+
+        @keyframes swing {
+            20% {
+                -webkit-transform: rotate(15deg);
+                transform: rotate(15deg)
+            }
+
+            40% {
+                -webkit-transform: rotate(-10deg);
+                transform: rotate(-10deg)
+            }
+
+            60% {
+                -webkit-transform: rotate(5deg);
+                transform: rotate(5deg)
+            }
+
+            80% {
+                -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg)
+            }
+
+            to {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg)
+            }
+        }
+
+        .animate__swing {
+            -webkit-transform-origin: top center;
+            transform-origin: top center;
+            -webkit-animation-name: swing;
+            animation-name: swing
+        }
+
+        @-webkit-keyframes tada {
+            0% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+
+            10%,
+            20% {
+                -webkit-transform: scale3d(.9, .9, .9) rotate(-3deg);
+                transform: scale3d(.9, .9, .9) rotate(-3deg)
+            }
+
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate(3deg)
+            }
+
+            40%,
+            60%,
+            80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg)
+            }
+
+            to {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+        }
+
+        @keyframes tada {
+            0% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+
+            10%,
+            20% {
+                -webkit-transform: scale3d(.9, .9, .9) rotate(-3deg);
+                transform: scale3d(.9, .9, .9) rotate(-3deg)
+            }
+
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate(3deg)
+            }
+
+            40%,
+            60%,
+            80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg)
+            }
+
+            to {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1)
+            }
+        }
+
+        .animate__tada {
+            -webkit-animation-name: tada;
+            animation-name: tada
+        }
+
+        @-webkit-keyframes wobble {
+            0% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            15% {
+                -webkit-transform: translate3d(-25%, 0, 0) rotate(-5deg);
+                transform: translate3d(-25%, 0, 0) rotate(-5deg)
+            }
+
+            30% {
+                -webkit-transform: translate3d(20%, 0, 0) rotate(3deg);
+                transform: translate3d(20%, 0, 0) rotate(3deg)
+            }
+
+            45% {
+                -webkit-transform: translate3d(-15%, 0, 0) rotate(-3deg);
+                transform: translate3d(-15%, 0, 0) rotate(-3deg)
+            }
+
+            60% {
+                -webkit-transform: translate3d(10%, 0, 0) rotate(2deg);
+                transform: translate3d(10%, 0, 0) rotate(2deg)
+            }
+
+            75% {
+                -webkit-transform: translate3d(-5%, 0, 0) rotate(-1deg);
+                transform: translate3d(-5%, 0, 0) rotate(-1deg)
+            }
+
+            to {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+
+        @keyframes wobble {
+            0% {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            15% {
+                -webkit-transform: translate3d(-25%, 0, 0) rotate(-5deg);
+                transform: translate3d(-25%, 0, 0) rotate(-5deg)
+            }
+
+            30% {
+                -webkit-transform: translate3d(20%, 0, 0) rotate(3deg);
+                transform: translate3d(20%, 0, 0) rotate(3deg)
+            }
+
+            45% {
+                -webkit-transform: translate3d(-15%, 0, 0) rotate(-3deg);
+                transform: translate3d(-15%, 0, 0) rotate(-3deg)
+            }
+
+            60% {
+                -webkit-transform: translate3d(10%, 0, 0) rotate(2deg);
+                transform: translate3d(10%, 0, 0) rotate(2deg)
+            }
+
+            75% {
+                -webkit-transform: translate3d(-5%, 0, 0) rotate(-1deg);
+                transform: translate3d(-5%, 0, 0) rotate(-1deg)
+            }
+
+            to {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+        }
+
+        .animate__wobble {
+            -webkit-animation-name: wobble;
+            animation-name: wobble
+        }
+
+        @-webkit-keyframes jello {
+
+            0%,
+            11.1%,
+            to {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            22.2% {
+                -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+                transform: skewX(-12.5deg) skewY(-12.5deg)
+            }
+
+            33.3% {
+                -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+                transform: skewX(6.25deg) skewY(6.25deg)
+            }
+
+            44.4% {
+                -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+                transform: skewX(-3.125deg) skewY(-3.125deg)
+            }
+
+            55.5% {
+                -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+                transform: skewX(1.5625deg) skewY(1.5625deg)
+            }
+
+            66.6% {
+                -webkit-transform: skewX(-.78125deg) skewY(-.78125deg);
+                transform: skewX(-.78125deg) skewY(-.78125deg)
+            }
+
+            77.7% {
+                -webkit-transform: skewX(.390625deg) skewY(.390625deg);
+                transform: skewX(.390625deg) skewY(.390625deg)
+            }
+
+            88.8% {
+                -webkit-transform: skewX(-.1953125deg) skewY(-.1953125deg);
+                transform: skewX(-.1953125deg) skewY(-.1953125deg)
+            }
+        }
+
+        @keyframes jello {
+
+            0%,
+            11.1%,
+            to {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0)
+            }
+
+            22.2% {
+                -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+                transform: skewX(-12.5deg) skewY(-12.5deg)
+            }
+
+            33.3% {
+                -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+                transform: skewX(6.25deg) skewY(6.25deg)
+            }
+
+            44.4% {
+                -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+                transform: skewX(-3.125deg) skewY(-3.125deg)
+            }
+
+            55.5% {
+                -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+                transform: skewX(1.5625deg) skewY(1.5625deg)
+            }
+
+            66.6% {
+                -webkit-transform: skewX(-.78125deg) skewY(-.78125deg);
+                transform: skewX(-.78125deg) skewY(-.78125deg)
+            }
+
+            77.7% {
+                -webkit-transform: skewX(.390625deg) skewY(.390625deg);
+                transform: skewX(.390625deg) skewY(.390625deg)
+            }
+
+            88.8% {
+                -webkit-transform: skewX(-.1953125deg) skewY(-.1953125deg);
+                transform: skewX(-.1953125deg) skewY(-.1953125deg)
+            }
+        }
+
+        .animate__jello {
+            -webkit-animation-name: jello;
+            animation-name: jello;
+            -webkit-transform-origin: center;
+            transform-origin: center
+        }
+
+        @-webkit-keyframes heartBeat {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            14% {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3)
+            }
+
+            28% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            42% {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3)
+            }
+
+            70% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @keyframes heartBeat {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            14% {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3)
+            }
+
+            28% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            42% {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3)
+            }
+
+            70% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        .animate__heartBeat {
+            -webkit-animation-name: heartBeat;
+            animation-name: heartBeat;
+            -webkit-animation-duration: 1.3s;
+            animation-duration: 1.3s;
+            -webkit-animation-duration: calc(var(--animate-duration)*1.3);
+            animation-duration: calc(var(--animate-duration)*1.3);
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out
+        }
+    </style>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+            background: #79a8ae;
+            color: #CFEBE4;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 1.2px;
+            margin: 0;
+        }
+
+        a {
+            color: #ebf7f4;
+        }
+
+        .body--ready {
+            background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+        }
+
+        .text {
+            position: fixed;
+            bottom: 100px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .canvas {
+            margin: 0 auto;
+            display: block;
+        }
+
+        img#logo {
+            width: 128px;
+            background-size: cover;
+            border-radius: 200px;
+            box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+            border: 3px solid #00a0ff;
+            opacity: 1;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: all 1.0s;
+        }
+
+        #logo:hover {
+            box-shadow: 0 0 10px #fff;
+            -webkit-box-shadow: 0 0 19px #fff;
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            /* IE 9 */
+            -moz-transform: rotate(360deg);
+            /* Firefox */
+            -webkit-transform: rotate(360deg);
+            /* Safari 和 Chrome */
+            -o-transform: rotate(360deg);
+            /* Opera */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        }
+
+        .cs {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            position: absolute;
+            text-align: center;
+        }
+
+        .text {
+            position: fixed;
+            bottom: 80px;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .text-right {
+            position: fixed;
+            bottom: 50px;
+            text-align: right;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        #span_dt_dt {
+            font-size: 180%;
+            line-height: 1.5;
+            margin: 1em 0;
+            color: black;
+        }
+
+        #span_dt_dt span {
+            color: rgb(253, 99, 125);
+            font-weight: bold;
+        }
+        #words{
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="cs">
+        <!-- <img src="https://s1.ax1x.com/2020/05/28/tVpycD.png" id="logo"> -->
+        <img src="./404/fangsisi.png" id="logo">
+    </div>
+    <canvas class="canvas" width="1820" height="760"></canvas>
+    <p class="text" style="color: #ed3073;">
+        <span style="display: inline-block" id="zhuzhu" class="animate__animated  animate__delay-1s">猪猪</span>
+        We have been fell in <span id="love">love</span>
+        <br />
+        <span id="span_dt_dt"></span>
+    </p>
+    <marquee id="words" behavior=alternate direction=left align=middle></marquee>
+    <script language="javascript">
+        function show_date_time() {
+            window.setTimeout("show_date_time()", 1000);
+            BirthDay = new Date("5/17/2020 08:50:00"); //这个日期是可以修改的
+            today = new Date();
+            timeold = (today.getTime() - BirthDay.getTime());
+            sectimeold = timeold / 1000
+            secondsold = Math.floor(sectimeold);
+            msPerDay = 24 * 60 * 60 * 1000
+            e_daysold = timeold / msPerDay
+            daysold = Math.floor(e_daysold);
+            e_hrsold = (e_daysold - daysold) * 24;
+            hrsold = Math.floor(e_hrsold);
+            e_minsold = (e_hrsold - hrsold) * 60;
+            minsold = Math.floor((e_hrsold - hrsold) * 60);
+            seconds = Math.floor((e_minsold - minsold) * 60);
+            span_dt_dt.innerHTML =
+                `<span>${daysold}</span>天<span>${hrsold}</span>小时<span>${minsold}</span>分<span>${seconds}</span>秒`;
+
+        }
+
+        show_date_time();
+    </script>
+    <script>
+        var S = {
+            init: function () {
+                S.Drawing.init('.canvas');
+                document.body.classList.add('body--ready');
+                // 想说的话
+                S.UI.simulate("思思|大叔|爱你|一|辈|子|#countdown 3|#time");
+                S.Drawing.loop(function () {
+                    S.Shape.render();
+                });
+            }
+        };
+
+        S.Drawing = (function () {
+            var canvas,
+                context,
+                renderFn,
+                requestFrame = window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+
+            return {
+                init: function (el) {
+                    canvas = document.querySelector(el);
+                    context = canvas.getContext('2d');
+                    this.adjustCanvas();
+
+                    window.addEventListener('resize', function (e) {
+                        S.Drawing.adjustCanvas();
+                    });
+                },
+                loop: function (fn) {
+                    renderFn = !renderFn ? fn : renderFn;
+                    this.clearFrame();
+                    renderFn();
+                    requestFrame.call(window, this.loop.bind(this));
+                },
+                adjustCanvas: function () {
+                    canvas.width = window.innerWidth - 100;
+                    canvas.height = window.innerHeight - 30;
+                },
+                clearFrame: function () {
+                    context.clearRect(0, 0, canvas.width, canvas.height);
+                },
+                getArea: function () {
+                    return {
+                        w: canvas.width,
+                        h: canvas.height
+                    };
+                },
+                drawCircle: function (p, c) {
+                    context.fillStyle = c.render();
+                    context.beginPath();
+                    context.arc(p.x, p.y, p.z, 0, 2 * Math.PI, true);
+                    context.closePath();
+                    context.fill();
+                }
+            };
+        }());
+
+
+        S.UI = (function () {
+            var interval,
+                currentAction,
+                time,
+                maxShapeSize = 30,
+                sequence = [],
+                cmd = '#';
+
+            function formatTime(date) {
+                var h = date.getHours(),
+                    m = date.getMinutes(),
+                    m = m < 10 ? '0' + m : m;
+                return h + ':' + m;
+            }
+
+            function getValue(value) {
+                return value && value.split(' ')[1];
+            }
+
+            function getAction(value) {
+                value = value && value.split(' ')[0];
+                return value && value[0] === cmd && value.substring(1);
+            }
+
+            function timedAction(fn, delay, max, reverse) {
+                clearInterval(interval);
+                currentAction = reverse ? max : 1;
+                fn(currentAction);
+
+                if (!max || (!reverse && currentAction < max) || (reverse && currentAction > 0)) {
+                    interval = setInterval(function () {
+                        currentAction = reverse ? currentAction - 1 : currentAction + 1;
+                        fn(currentAction);
+
+                        if ((!reverse && max && currentAction === max) || (reverse && currentAction ===
+                                0)) {
+                            clearInterval(interval);
+                        }
+                    }, delay);
+                }
+            }
+
+            function performAction(value) {
+                var action,
+                    value,
+                    current;
+
+                sequence = typeof (value) === 'object' ? value : sequence.concat(value.split('|'));
+
+                timedAction(function (index) {
+                    current = sequence.shift();
+                    action = getAction(current);
+                    value = getValue(current);
+
+                    switch (action) {
+                        case 'countdown':
+                            value = parseInt(value) || 10;
+                            value = value > 0 ? value : 10;
+
+                            timedAction(function (index) {
+                                if (index === 0) {
+                                    if (sequence.length === 0) {
+                                        S.Shape.switchShape(S.ShapeBuilder.letter(''));
+                                    } else {
+                                        performAction(sequence);
+                                    }
+                                } else {
+                                    S.Shape.switchShape(S.ShapeBuilder.letter(index), true);
+                                }
+                            }, 1000, value, true);
+                            break;
+
+                        case 'rectangle':
+                            value = value && value.split('x');
+                            value = (value && value.length === 2) ? value : [maxShapeSize,
+                                maxShapeSize / 2
+                            ];
+
+                            S.Shape.switchShape(S.ShapeBuilder.rectangle(Math.min(maxShapeSize,
+                                parseInt(value[0])), Math.min(maxShapeSize, parseInt(value[
+                                1]))));
+                            break;
+
+                        case 'circle':
+                            value = parseInt(value) || maxShapeSize;
+                            value = Math.min(value, maxShapeSize);
+                            S.Shape.switchShape(S.ShapeBuilder.circle(value));
+                            break;
+
+                        case 'time':
+                            var t = formatTime(new Date());
+
+                            if (sequence.length > 0) {
+                                S.Shape.switchShape(S.ShapeBuilder.letter(t));
+                            } else {
+                                timedAction(function () {
+                                    t = formatTime(new Date());
+                                    if (t !== time) {
+                                        time = t;
+                                        S.Shape.switchShape(S.ShapeBuilder.letter(time));
+                                    }
+                                }, 1000);
+                            }
+                            break;
+
+                        default:
+                            S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'HacPai' :
+                                current));
+                    }
+                }, 2000, sequence.length);
+            }
+
+            return {
+                simulate: function (action) {
+                    performAction(action);
+                }
+            };
+        }());
+
+
+        S.Point = function (args) {
+            this.x = args.x;
+            this.y = args.y;
+            this.z = args.z;
+            this.a = args.a;
+            this.h = args.h;
+        };
+
+
+        S.Color = function (r, g, b, a) {
+            this.r = r;
+            this.g = g;
+            this.b = b;
+            this.a = a;
+        };
+
+        S.Color.prototype = {
+            render: function () {
+                return 'rgba(' + this.r + ',' + +this.g + ',' + this.b + ',' + this.a + ')';
+            }
+        };
+
+
+        S.Dot = function (x, y) {
+            this.p = new S.Point({
+                x: x,
+                y: y,
+                z: 5,
+                a: 1,
+                h: 0
+            });
+
+            this.e = 0.07;
+            this.s = true;
+
+            this.c = new S.Color(255, 255, 255, this.p.a);
+
+            this.t = this.clone();
+            this.q = [];
+        };
+
+        S.Dot.prototype = {
+            clone: function () {
+                return new S.Point({
+                    x: this.x,
+                    y: this.y,
+                    z: this.z,
+                    a: this.a,
+                    h: this.h
+                });
+            },
+            _draw: function () {
+                this.c.a = this.p.a;
+                S.Drawing.drawCircle(this.p, this.c);
+            },
+            _moveTowards: function (n) {
+                var details = this.distanceTo(n, true),
+                    dx = details[0],
+                    dy = details[1],
+                    d = details[2],
+                    e = this.e * d;
+
+                if (this.p.h === -1) {
+                    this.p.x = n.x;
+                    this.p.y = n.y;
+                    return true;
+                }
+
+                if (d > 1) {
+                    this.p.x -= ((dx / d) * e);
+                    this.p.y -= ((dy / d) * e);
+                } else {
+                    if (this.p.h > 0) {
+                        this.p.h--;
+                    } else {
+                        return true;
+                    }
+                }
+
+                return false;
+            },
+            _update: function () {
+                if (this._moveTowards(this.t)) {
+                    var p = this.q.shift();
+
+                    if (p) {
+                        this.t.x = p.x || this.p.x;
+                        this.t.y = p.y || this.p.y;
+                        this.t.z = p.z || this.p.z;
+                        this.t.a = p.a || this.p.a;
+                        this.p.h = p.h || 0;
+                    } else {
+                        if (this.s) {
+                            this.p.x -= Math.sin(Math.random() * 3.142);
+                            this.p.y -= Math.sin(Math.random() * 3.142);
+                        } else {
+                            this.move(new S.Point({
+                                x: this.p.x + (Math.random() * 50) - 25,
+                                y: this.p.y + (Math.random() * 50) - 25
+                            }));
+                        }
+                    }
+                }
+
+                d = this.p.a - this.t.a;
+                this.p.a = Math.max(0.1, this.p.a - (d * 0.05));
+                d = this.p.z - this.t.z;
+                this.p.z = Math.max(1, this.p.z - (d * 0.05));
+            },
+            distanceTo: function (n, details) {
+                var dx = this.p.x - n.x,
+                    dy = this.p.y - n.y,
+                    d = Math.sqrt(dx * dx + dy * dy);
+
+                return details ? [dx, dy, d] : d;
+            },
+            move: function (p, avoidStatic) {
+                if (!avoidStatic || (avoidStatic && this.distanceTo(p) > 1)) {
+                    this.q.push(p);
+                }
+            },
+            render: function () {
+                this._update();
+                this._draw();
+            }
+        };
+
+
+        S.ShapeBuilder = (function () {
+            var gap = 13,
+                shapeCanvas = document.createElement('canvas'),
+                shapeContext = shapeCanvas.getContext('2d'),
+                fontSize = 500,
+                fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
+
+            function fit() {
+                shapeCanvas.width = Math.floor(window.innerWidth / gap) * gap;
+                shapeCanvas.height = Math.floor(window.innerHeight / gap) * gap;
+                shapeContext.fillStyle = 'red';
+                shapeContext.textBaseline = 'middle';
+                shapeContext.textAlign = 'center';
+            }
+
+            function processCanvas() {
+                var pixels = shapeContext.getImageData(0, 0, shapeCanvas.width, shapeCanvas.height).data;
+                dots = [],
+                    pixels,
+                    x = 0,
+                    y = 0,
+                    fx = shapeCanvas.width,
+                    fy = shapeCanvas.height,
+                    w = 0,
+                    h = 0;
+
+                for (var p = 0; p < pixels.length; p += (4 * gap)) {
+                    if (pixels[p + 3] > 0) {
+                        dots.push(new S.Point({
+                            x: x,
+                            y: y
+                        }));
+
+                        w = x > w ? x : w;
+                        h = y > h ? y : h;
+                        fx = x < fx ? x : fx;
+                        fy = y < fy ? y : fy;
+                    }
+
+                    x += gap;
+
+                    if (x >= shapeCanvas.width) {
+                        x = 0;
+                        y += gap;
+                        p += gap * 4 * shapeCanvas.width;
+                    }
+                }
+
+                return {
+                    dots: dots,
+                    w: w + fx,
+                    h: h + fy
+                };
+            }
+
+            function setFontSize(s) {
+                shapeContext.font = 'bold ' + s + 'px ' + fontFamily;
+            }
+
+            function isNumber(n) {
+                return !isNaN(parseFloat(n)) && isFinite(n);
+            }
+
+            function init() {
+                fit();
+                window.addEventListener('resize', fit);
+            }
+
+            // Init
+            init();
+
+            return {
+                imageFile: function (url, callback) {
+                    var image = new Image(),
+                        a = S.Drawing.getArea();
+
+                    image.onload = function () {
+                        shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
+                        shapeContext.drawImage(this, 0, 0, a.h * 0.6, a.h * 0.6);
+                        callback(processCanvas());
+                    };
+
+                    image.onerror = function () {
+                        callback(S.ShapeBuilder.letter('What?'));
+                    };
+
+                    image.src = url;
+                },
+                circle: function (d) {
+                    var r = Math.max(0, d) / 2;
+                    shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
+                    shapeContext.beginPath();
+                    shapeContext.arc(r * gap, r * gap, r * gap, 0, 2 * Math.PI, false);
+                    shapeContext.fill();
+                    shapeContext.closePath();
+
+                    return processCanvas();
+                },
+                letter: function (l) {
+                    var s = 0;
+
+                    setFontSize(fontSize);
+                    s = Math.min(fontSize,
+                        (shapeCanvas.width / shapeContext.measureText(l).width) * 0.8 * fontSize,
+                        (shapeCanvas.height / fontSize) * (isNumber(l) ? 1 : 0.45) * fontSize);
+                    setFontSize(s);
+
+                    shapeContext.clearRect(0, 0, shapeCanvas.width, shapeCanvas.height);
+                    shapeContext.fillText(l, shapeCanvas.width / 2, shapeCanvas.height / 2);
+
+                    return processCanvas();
+                },
+                rectangle: function (w, h) {
+                    var dots = [],
+                        width = gap * w,
+                        height = gap * h;
+
+                    for (var y = 0; y < height; y += gap) {
+                        for (var x = 0; x < width; x += gap) {
+                            dots.push(new S.Point({
+                                x: x,
+                                y: y
+                            }));
+                        }
+                    }
+
+                    return {
+                        dots: dots,
+                        w: width,
+                        h: height
+                    };
+                }
+            };
+        }());
+
+
+        S.Shape = (function () {
+            var dots = [],
+                width = 0,
+                height = 0,
+                cx = 0,
+                cy = 0;
+
+            function compensate() {
+                var a = S.Drawing.getArea();
+
+                cx = a.w / 2 - width / 2;
+                cy = a.h / 2 - height / 2;
+            }
+
+            return {
+                shuffleIdle: function () {
+                    var a = S.Drawing.getArea();
+
+                    for (var d = 0; d < dots.length; d++) {
+                        if (!dots[d].s) {
+                            dots[d].move({
+                                x: Math.random() * a.w,
+                                y: Math.random() * a.h
+                            });
+                        }
+                    }
+                },
+                switchShape: function (n, fast) {
+                    var size,
+                        a = S.Drawing.getArea();
+
+                    width = n.w;
+                    height = n.h;
+
+                    compensate();
+
+                    if (n.dots.length > dots.length) {
+                        size = n.dots.length - dots.length;
+                        for (var d = 1; d <= size; d++) {
+                            dots.push(new S.Dot(a.w / 2, a.h / 2));
+                        }
+                    }
+
+                    var d = 0,
+                        i = 0;
+
+                    while (n.dots.length > 0) {
+                        i = Math.floor(Math.random() * n.dots.length);
+                        dots[d].e = fast ? 0.25 : (dots[d].s ? 0.14 : 0.11);
+
+                        if (dots[d].s) {
+                            dots[d].move(new S.Point({
+                                z: Math.random() * 20 + 10,
+                                a: Math.random(),
+                                h: 18
+                            }));
+                        } else {
+                            dots[d].move(new S.Point({
+                                z: Math.random() * 5 + 5,
+                                h: fast ? 18 : 30
+                            }));
+                        }
+
+                        dots[d].s = true;
+                        dots[d].move(new S.Point({
+                            x: n.dots[i].x + cx,
+                            y: n.dots[i].y + cy,
+                            a: 1,
+                            z: 5,
+                            h: 0
+                        }));
+
+                        n.dots = n.dots.slice(0, i).concat(n.dots.slice(i + 1));
+                        d++;
+                    }
+
+                    for (var i = d; i < dots.length; i++) {
+                        if (dots[i].s) {
+                            dots[i].move(new S.Point({
+                                z: Math.random() * 20 + 10,
+                                a: Math.random(),
+                                h: 20
+                            }));
+
+                            dots[i].s = false;
+                            dots[i].e = 0.04;
+                            dots[i].move(new S.Point({
+                                x: Math.random() * a.w,
+                                y: Math.random() * a.h,
+                                a: 0.3, //.4
+                                z: Math.random() * 4,
+                                h: 0
+                            }));
+                        }
+                    }
+                },
+                render: function () {
+                    for (var d = 0; d < dots.length; d++) {
+                        dots[d].render();
+                    }
+                }
+            };
+        }());
+        S.init();
+    </script>
+    <script>
+        function showAnimate(name) {
+            console.log(name)
+            zhuzhu.classList.add(name)
+            setTimeout(() => {
+                zhuzhu.classList.remove(name)
+            }, 3000)
+        }
+        showAnimate('animate__heartBeat');
+
+        const arrCssName = [
+            'animate__pulse',
+            'animate__shakeX',
+            'animate__shakeY',
+            'animate__headShake',
+            'animate__tada',
+            'animate__jello',
+            'animate__heartBeat',
+        ];
+        const memoryWords = [
+            '大叔和思思相识于2020年5月1日',
+            '缘分让我们相遇，时光当倍加珍惜',
+            '2020年5月16日，大叔鼓足勇气向猪猪女孩儿表白了~',
+            '2020年5月17日 8：50，小猪猪正式成为了大叔的女朋友!',
+            '玲珑骰子安红豆，入骨相思知不知',
+            '入我相思门，知我相思苦',
+            '只愿君心似我心，定不负相思意',
+            '平生不会相思，才会相思，便害相思',
+            '身无彩凤双飞翼，心有灵犀一点通',
+            '若是前生未有缘，待重结、来生愿',
+            '怕相思，已相思，轮到相思没处辞，眉间露一丝',
+            '天涯地角有穷时，只有相思无尽处',
+            '换我心，为你心，始知相忆深',
+            '相思只在，丁香枝上，豆蔻梢头',
+            '欲把相思说似谁，浅情人不知',
+            '梅花雪，梨花月，总相思',
+            '逢郎欲语低头笑，碧玉搔头落水中'
+        ];
+        var count = 0;
+        let getRandomNum = function (n) {
+            return parseInt(Math.random() * n);
+        }
+
+        zhuzhu.onclick = function () {
+            const indexCss = getRandomNum(arrCssName.length);
+            showAnimate(arrCssName[indexCss])
+        }
+        body.onclick = _ => {
+            count++;
+            const wordIndex = getRandomNum(memoryWords.length);
+            words.setAttribute('direction', Math.random() > 0.5 ? 'left' : 'right');
+            if (count > 24) {
+                return;
+            } else if (count > 23) {
+                alert('思思猪，大叔永远爱你！')
+                alert('思思猪，大叔永远爱你！')
+                alert('思思猪，大叔永远爱你！')
+
+                words.innerHTML = "择一城终老，携一人白首  -大叔love思思"
+            } else if (count > 22) {
+                alert('好吧-好吧-')
+            } else if (count > 21) {
+                alert('就知道你会点？')
+            } else if (count > 20) {
+                alert('好奇宝宝，想看所有的对不对？')
+            } else {
+                words.innerHTML = memoryWords[wordIndex ];
+            }
+        }
+
+        let wifeCount = 0;
+        logo.onclick = _ => {
+            wifeCount++;
+            if (wifeCount > 5) {
+                alert('这是大叔的妹纸，她这么可爱，别乱碰!')
+            }
+        }
+    </script>
+</body>
+
+</html>
